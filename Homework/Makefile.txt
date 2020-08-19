@@ -1,0 +1,20 @@
+build_floyd: 
+	javac /Floyd-Warshall/src/com/floyd/main/Main.java
+
+run_floyd: 
+	java main
+
+build_dijkstra: 
+	javac -cp /javafx-sdk-11.0.2/lib /Dijkstra/src/com/dijkstra/main/Main.java
+
+run_dijkstra: 
+	java main
+
+build_johnson: 
+	javac -cp /javafx-sdk-11.0.2/lib /Johnson/src/com/johnson/main/Main.java
+
+run_johnson: 
+	java main
+
+clean:
+	rm -rf *.class
